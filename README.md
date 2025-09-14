@@ -15,6 +15,8 @@ get_code <- function(unique_name) {
   content <- fromJSON(content(response, "text", encoding = "UTF-8"))
   cat(content$code)
 }
+
+
 get_code("SM")
 
 
@@ -33,5 +35,4 @@ def get_code(unique_name):
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
 
-# Example usage:
 get_code("your_unique_name")
